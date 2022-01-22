@@ -10,14 +10,11 @@ def valid_parentheses(string: str) -> bool:
     counter = 0
 
     for character in string:
-        if counter < 0:
-            return False
-
-        if character == '(':
-            counter += 1
-        elif character == ')':
-            counter -= 1
-    return counter == 0
+        if character == '(': counter += 1    
+        if character == ')': counter -= 1
+        if counter < 0: return False 
+              
+    return True if counter == 0 else False
 
 dummy_string = ')test'
 dummy_string_2 = 'hi(hi)()'
