@@ -19,7 +19,6 @@ def solution_a(A):
   # Make the sorted list with positive integer numbers only. 
   A.sort() 
   sorted_positive_list = [ x for x in A if x>0 ]
-  print(sorted_positive_list, 'here')
   
   # Find the list of pair of integer with the difference between two numbers are bigger than 2.
   for i in range(len(sorted_positive_list)-1):
