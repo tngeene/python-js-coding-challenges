@@ -1,5 +1,5 @@
 .Ds_Store
 .idea
-.vs_code
+.vscode
 __pycache__ 
 node_modules
